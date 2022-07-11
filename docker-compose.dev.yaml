@@ -1,0 +1,16 @@
+version: '3'
+services:
+  db:
+    image:  postgres:11
+    ports:
+      - 32700:5432
+    volumes:
+      - data:/var/lib/postgresql/data
+    command: postgres -c stats_temp_directory=/tmp
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: fastapi_template
+    
+volumes:
+  data:

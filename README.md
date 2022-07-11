@@ -1,1 +1,1 @@
-# FastAPI_template
+# FastAPI_simple-blog
